@@ -1,0 +1,115 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#EEF1F8',
+          100: '#D0D9ED',
+          200: '#A0B3DB',
+          300: '#718EC9',
+          400: '#4168B7',
+          500: '#0A2342', // primary
+          600: '#091E3B',
+          700: '#071834',
+          800: '#05132D',
+          900: '#030E26',
+        },
+        accent: {
+          50: '#FFF2F0',
+          100: '#FFE4E0',
+          200: '#FFC9C1',
+          300: '#FFAFA2',
+          400: '#FF9483',
+          500: '#FF715B', // accent
+          600: '#FF4D2D',
+          700: '#FF2900',
+          800: '#D12200',
+          900: '#A31A00',
+        },
+        success: {
+          50: '#E6F7EC',
+          100: '#C3ECD4',
+          200: '#9FE1BC',
+          300: '#7BD6A4',
+          400: '#57CB8C',
+          500: '#33C074',
+          600: '#2AA05E',
+          700: '#208047',
+          800: '#166030',
+          900: '#0D4018',
+        },
+        warning: {
+          50: '#FFF8E6',
+          100: '#FFECC0',
+          200: '#FFE099',
+          300: '#FFD473',
+          400: '#FFC84D',
+          500: '#FFBC26',
+          600: '#F7AE00',
+          700: '#C48A00',
+          800: '#926700',
+          900: '#604400',
+        },
+        error: {
+          50: '#FDEEEE',
+          100: '#FADADA',
+          200: '#F6B6B6',
+          300: '#F19191',
+          400: '#EC6D6D',
+          500: '#E74848',
+          600: '#D42020',
+          700: '#A61A1A',
+          800: '#781313',
+          900: '#4B0C0C',
+        },
+        neutral: {
+          50: '#F8F9FA',
+          100: '#F1F3F5',
+          200: '#E9ECEF',
+          300: '#DEE2E6',
+          400: '#CED4DA',
+          500: '#ADB5BD',
+          600: '#6C757D',
+          700: '#495057',
+          800: '#343A40',
+          900: '#212529',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+        'product': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02)',
+        'card': '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.01)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'slide-in-right': 'slideInRight 0.4s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(20px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
