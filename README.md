@@ -1,4 +1,4 @@
-### PRODIGY_FS_03 – Local Store E-commerce Platform
+###  Local Store E-commerce Platform
 
 ##  Task 3: Local Store E-commerce Website  
 This is the third task of the **Prodigy InfoTech Full Stack Web Development Internship**.  
